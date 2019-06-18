@@ -20,12 +20,13 @@ public class Loginpage {
 	public void Usernameenter(String UserID)
 	{
 		driver.findElement(By.xpath(Username)).sendKeys(UserID);
+		System.out.println(UserID);
 	}
 
 	public void Passwordenter(String PasswordKey) {
 	
 		driver.findElement(By.xpath(Password)).sendKeys(PasswordKey);
-		
+		System.out.println(PasswordKey);
 	}
 	
 	public void LoginClick()
